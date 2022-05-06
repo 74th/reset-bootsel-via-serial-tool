@@ -1,4 +1,4 @@
-module github.com/74th/reset-bootcel-via-serial-tool
+module github.com/74th/reset-bootsel-via-serial-tool
 
 go 1.18
 

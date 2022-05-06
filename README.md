@@ -6,5 +6,11 @@ The Arduino CLI has an implementation that does this reset, so this tool calls i
 ## install
 
 ```
-go download
+go install github.com/74th/reset-bootcel-via-serial-tool/cmd/reset-bootcel@latest
+```
+
+### how to use
+
+```
+
 ```
