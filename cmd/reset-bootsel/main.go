@@ -9,7 +9,7 @@ import (
 
 func main() {
 	if len(os.Args) == 1 || os.Args[1] == "-h" || os.Args[1] == "--help" {
-		fmt.Printf("reset-arduino <port>\n")
+		fmt.Printf("%s <port>\n", os.Args[0])
 		os.Exit(1)
 	}
 	port := os.Args[1]
