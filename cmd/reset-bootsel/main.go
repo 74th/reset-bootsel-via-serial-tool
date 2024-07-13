@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/arduino/arduino-cli/arduino/serialutils"
+	serialutils "github.com/arduino/go-serial-utils"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 		os.Exit(1)
 	}
 	port := os.Args[1]
-	err := serialutils.TouchSerialPortAt1200bps(port)
+	err := serialutils.Touch1200bps(port)
 	if err != nil {
 		fmt.Printf("cannot reset: %s", err.Error())
 		os.Exit(1)
